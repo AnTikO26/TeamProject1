@@ -18,6 +18,8 @@ int main()
 		cout << "------------------------" << endl;
 		cout << "1. a + b" << endl;
 		cout << "2. a - b" << endl;
+		cout << "3. a * b" << endl;
+		cout << "4. a / b" << endl;
 		cout << "0. Закончить работу" << endl;
 		cout << "------------------------" << endl;
 		cout << "Операция: ";
@@ -40,7 +42,21 @@ int main()
 			cout << "Введите 1 чтобы вернуться в меню, 0 чтобы закрыть программу: ";
 			cin >> s;
 			system("cls");
-		}
+			break;
+		case 3:
+			cout << "a * b = ";
+			cout << MyMul(a, b) << endl;
+			cout << "Введите 1 чтобы вернуться в меню, 0 чтобы закрыть программу: ";
+			cin >> s;
+			system("cls");
+			break;
+		case 4:
+			cout << "a / b = ";
+			cout << MyDiv(a, b) << endl;
+			cout << "Введите 1 чтобы вернуться в меню, 0 чтобы закрыть программу: ";
+			cin >> s;
+			system("cls");
+	}
 
 	} while (s != 0);
 	system("pause");
